@@ -84,7 +84,7 @@ def load_balance():
 
 def refill(amount):
     global balance   
-    was_empty = balance == 0
+    was_empty = balance <= 0
     # Add new amount
     balance = float(amount) + balance
     save_balance()
